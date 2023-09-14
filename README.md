@@ -2,20 +2,20 @@
 
 A Swift shared-memory implementation of the blackboard communication architecture.
 
-[![MacOS Monterey Swift Debug CI](https://github.com/mipalgu/swift-whiteboard/actions/workflows/ci-macOS-debug.yml/badge.svg)](https://github.com/mipalgu/swift-whiteboard/actions/workflows/ci-macOS-debug.yml)
-[![MacOS Monterey Swift Release CI](https://github.com/mipalgu/swift-whiteboard/actions/workflows/ci-macOS-release.yml/badge.svg)](https://github.com/mipalgu/swift-whiteboard/actions/workflows/ci-macOS-release.yml)
-[![MacOS Ventura Swift Debug CI](https://github.com/mipalgu/swift-whiteboard/actions/workflows/ci-macOS13-debug.yml/badge.svg)](https://github.com/mipalgu/swift-whiteboard/actions/workflows/ci-macOS13-debug.yml)
-[![MacOS Ventura Swift Release CI](https://github.com/mipalgu/swift-whiteboard/actions/workflows/ci-macOS13-release.yml/badge.svg)](https://github.com/mipalgu/swift-whiteboard/actions/workflows/ci-macOS13-release.yml)
-[![Swift Coverage Test](https://github.com/mipalgu/swift-whiteboard/actions/workflows/cov.yml/badge.svg)](https://github.com/mipalgu/swift-whiteboard/actions/workflows/cov.yml)
-[![Swift Lint](https://github.com/mipalgu/swift-whiteboard/actions/workflows/swiftlint.yml/badge.svg)](https://github.com/mipalgu/swift-whiteboard/actions/workflows/swiftlint.yml)
-[![Ubuntu 20.04 Swift Debug CI](https://github.com/mipalgu/swift-whiteboard/actions/workflows/ci-linux-debug.yml/badge.svg)](https://github.com/mipalgu/swift-whiteboard/actions/workflows/ci-linux-debug.yml)
-[![Ubuntu 20.04 Swift Release CI](https://github.com/mipalgu/swift-whiteboard/actions/workflows/ci-linux-release.yml/badge.svg)](https://github.com/mipalgu/swift-whiteboard/actions/workflows/ci-linux-release.yml)
-[![Ubuntu 22.04 Swift Debug CI](https://github.com/mipalgu/swift-whiteboard/actions/workflows/ci-linux-debug-22_04.yml/badge.svg)](https://github.com/mipalgu/swift-whiteboard/actions/workflows/ci-linux-debug-22_04.yml)
-[![Ubuntu 22.04 Swift Release CI](https://github.com/mipalgu/swift-whiteboard/actions/workflows/ci-linux-release-22_04.yml/badge.svg)](https://github.com/mipalgu/swift-whiteboard/actions/workflows/ci-linux-release-22_04.yml)
+[![MacOS Monterey Swift Debug CI](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/ci-macOS-debug.yml/badge.svg)](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/ci-macOS-debug.yml)
+[![MacOS Monterey Swift Release CI](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/ci-macOS-release.yml/badge.svg)](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/ci-macOS-release.yml)
+[![MacOS Ventura Swift Debug CI](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/ci-macOS13-debug.yml/badge.svg)](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/ci-macOS13-debug.yml)
+[![MacOS Ventura Swift Release CI](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/ci-macOS13-release.yml/badge.svg)](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/ci-macOS13-release.yml)
+[![Swift Coverage Test](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/cov.yml/badge.svg)](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/cov.yml)
+[![Swift Lint](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/swiftlint.yml/badge.svg)](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/swiftlint.yml)
+[![Ubuntu 20.04 Swift Debug CI](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/ci-linux-debug.yml/badge.svg)](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/ci-linux-debug.yml)
+[![Ubuntu 20.04 Swift Release CI](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/ci-linux-release.yml/badge.svg)](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/ci-linux-release.yml)
+[![Ubuntu 22.04 Swift Debug CI](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/ci-linux-debug-22_04.yml/badge.svg)](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/ci-linux-debug-22_04.yml)
+[![Ubuntu 22.04 Swift Release CI](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/ci-linux-release-22_04.yml/badge.svg)](https://github.com/CPSLabGU/swift-whiteboard/actions/workflows/ci-linux-release-22_04.yml)
 
 ## Overview
 
-This is a Swift wrapper around [gusimplewhiteboard](https://github.com/mipalgu/gusimplewhiteboard).
+This is a Swift wrapper around [gusimplewhiteboard](https://github.com/CPSLabGU/gusimplewhiteboard).
 This package wraps the high-speed, concurrency-safe gusimplewhiteboard C library for use in Swift. The package provides a sendable ``Whiteboard`` class that allows concurrent read and write access to a common message base. Message slots can be configured by conforming to the ``WhiteboardSlot`` protocol. You can create your own type-safe messages through conformance to the ``WhiteboardSlotted`` protocol.
 
 ## Prerequisites
@@ -47,7 +47,7 @@ import PackageDescription
 
 let package = Package(name: "MyPackage",
     dependencies: [
-        .package(url: "https://github.com/mipalgu/swift-whiteboard.git", branch: "main"),
+        .package(url: "https://github.com/CPSLabGU/swift-whiteboard.git", branch: "main"),
     ],    
     targets: [
         .target(name: "MyPackage",
@@ -61,4 +61,4 @@ let package = Package(name: "MyPackage",
 
 ### Using the Whiteboard
 
-For details on how to use the whiteboard, see the [documentation](https://github.com/mipalgu/swift-whiteboard/blob/main/Sources/Whiteboard/Whiteboard.docc/Whiteboard.md).  For a quick start, have a look at the [Getting Started](https://github.com/mipalgu/swift-whiteboard/blob/main/Sources/Whiteboard/Whiteboard.docc/GettingStarted.md) document.
+For details on how to use the whiteboard, see the [documentation](https://github.com/CPSLabGU/swift-whiteboard/blob/main/Sources/Whiteboard/Whiteboard.docc/Whiteboard.md).  For a quick start, have a look at the [Getting Started](https://github.com/CPSLabGU/swift-whiteboard/blob/main/Sources/Whiteboard/Whiteboard.docc/GettingStarted.md) document.
